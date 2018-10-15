@@ -1,0 +1,43 @@
+    <body>
+	<div class="container">
+	    <div class="row">
+		<div class="col">
+		    <div class="form-group">
+    		    <label>Idioma* </label><input type="radio" name="idioma" value="1" checked> Bilingue </input><input type="radio" name="idioma" value="2"> Inglês</input>
+		    <br/>
+		    <label>Unidade* </label>
+		    <select id="unidades" onclick="listarSetor(this.value)">
+			{unidades}
+			    <option value="{idUnidade}">{nome}</option>
+			{/unidades}
+		    </select>
+		    <br/>
+		    <label>Setor* </label>
+		    <select id="setores">
+			{setores}
+			    <option value="{idSetor}">{nome}</option>
+			{/setores}
+		    </select>
+		    <br/>
+		    <label>Nome* </label>
+		    <input type="text"></input>
+		    <br/>
+		    <label>Cargo</label>
+		    <input type="text"></input>
+		    <br/>
+		    <label>Cargo (en)</label>
+		    <input type="text"></input>
+		    <br/>
+		    <label>Endereço* </label>
+		    <select id="endereco">
+			{endereco}
+			    <option value="{idEndereco}">
+			{/endereco}
+		    </select>
+		    </div>
+		</div>
+	    </div>
+	</div>
+	<script src="<?php echo base_url('assets/js/cartao.js'); ?>"> </script>
+
+    </body>
